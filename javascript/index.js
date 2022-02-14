@@ -118,16 +118,13 @@ obtainInstruction("brusselsSprouts", 7),
  ])
 .then((responsive) =>{
   responsive.forEach((eachStep) =>{
-    if(eachStep[7] ){
+    console.log(eachStep[10])
+    if(eachStep){
       document.querySelector("#brusselsSprouts").innerHTML += `<li>${eachStep}</li>`
       
-    } else{
-      
-      document.querySelector("#brusselsSprouts").innerHTML += `<li>Brussels Sprouts is ready!</li>`
-    }
-    
-
+    } 
   })
+  document.querySelector("#brusselsSprouts").innerHTML += `<li>Brussels Sprouts is ready!</li>`
   })
   .catch((err) => {
     console.log(err)
